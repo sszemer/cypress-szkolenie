@@ -1,10 +1,16 @@
 {
   "devDependencies": {
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
-    "cypress": "^10.8.0",
-    "esbuild": "^0.15.9"
+    "@typescript-eslint/eslint-plugin": "^5.39.0",
+    "@typescript-eslint/parser": "^5.39.0",
+    "cypress": "^10.9.0",
+    "esbuild": "^0.15.9",
+    "eslint": "^8.24.0",
+    "typescript": "^4.8.4"
   },
   "scripts": {
+    "lint": "eslint --ext .js,.ts .",
+    "dev": "tsc --watch",
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy.run:chrome:bank": "cypress run --spec 'cypress/e2e/pageObjectsTests/bankTestsUsingPageObjects.cy.js' --browser=chrome --headed --no-exit"

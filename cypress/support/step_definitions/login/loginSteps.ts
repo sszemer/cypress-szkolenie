@@ -2,7 +2,6 @@ import {
 	Given,
 	When,
 	Then,
-	And,
 } from '@badeball/cypress-cucumber-preprocessor';
 
 import LoginPage from '../../../pageObjects/loginPage';
@@ -17,7 +16,7 @@ Given('I open login page', () => {
 	});
 });
 
-When('I submit login with {string} and {string}', (username, password) => {
+When('I submit login with {string} and {string}', (username:string, password:string) => {
 	cy.get('#login_form').within(() => {
 		loginPage.loginAs(username, password);
 	});

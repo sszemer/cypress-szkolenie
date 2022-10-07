@@ -1,11 +1,11 @@
-const { defineConfig } = require('cypress');
+import { defineConfig } from 'cypress';
 const createBundler = require('@bahmutov/cypress-esbuild-preprocessor');
 const addCucumberPreprocessorPlugin =
 	require('@badeball/cypress-cucumber-preprocessor').addCucumberPreprocessorPlugin;
 const createEsbuildPlugin =
 	require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin;
 
-module.exports = defineConfig({
+export default defineConfig({
 	video: false,
 	videoCompression: 33,
 	defaultCommandTimeout: 5000,

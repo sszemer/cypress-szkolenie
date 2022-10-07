@@ -6,7 +6,5 @@ using:<br />
 -cypress-mochawesome-reporter for report<br />
 <br />
 TODO:<br />
--merge BDD branch -> master<br />
 -build ci/cd pipeline in actions<br />
 -report to pages<br />
--add typescript<br />
