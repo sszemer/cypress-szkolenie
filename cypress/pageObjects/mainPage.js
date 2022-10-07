@@ -1,5 +1,5 @@
 const selectors = {
-	accountSummaryTab: '#account_summary_Tab',
+	accountSummaryTab: '#account_summary_tab',
 	searchTextBox: '#searchTerm',
 };
 

@@ -1,14 +1,16 @@
 {
   "devDependencies": {
-    "cypress": "^10.8.0"
+    "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
+    "cypress": "^10.8.0",
+    "esbuild": "^0.15.9"
   },
   "scripts": {
     "cy:open": "cypress open",
     "cy:run": "cypress run",
     "cy.run:chrome:bank": "cypress run --spec 'cypress/e2e/pageObjectsTests/bankTestsUsingPageObjects.cy.js' --browser=chrome --headed --no-exit"
-	},
-
+  },
   "dependencies": {
+    "@badeball/cypress-cucumber-preprocessor": "^13.0.2",
     "cypress-mochawesome-reporter": "^3.2.2",
     "cypress-xpath": "^2.0.1",
     "prettier": "^2.7.1"
