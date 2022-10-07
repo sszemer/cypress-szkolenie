@@ -6,5 +6,4 @@ using:<br />
 -cypress-mochawesome-reporter for report<br />
 <br />
 TODO:<br />
--build ci/cd pipeline in actions<br />
 -report to pages<br />
