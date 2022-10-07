@@ -7,4 +7,5 @@ using:<br />
 <br />
 TODO:<br />
 -report to pages<br />
--fix mochawesome<br />
+-add BDD to books.ts and dropdown.ts<br />
+-add html reporter<br />

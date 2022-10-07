@@ -17,7 +17,7 @@ export default defineConfig({
 	pageLoadTimeout: 60000,
 	requestTimeout: 15000,
 	responseTimeout: 15000,
-
+	reporter: 'cypress-mochawesome-reporter',
 	e2e: {
 		async setupNodeEvents(on, config) {
 			const bundler = createBundler({
