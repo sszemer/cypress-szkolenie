@@ -21,7 +21,13 @@ export default defineConfig({
 	pageLoadTimeout: 60000,
 	requestTimeout: 15000,
 	responseTimeout: 15000,
-	reporter: 'cypress-mochawesome-reporter',
+	reporter: 'mochawesome',
+	reporterOptions: {
+		reportDir: 'cypress/results',
+		overwrite: false,
+		html: false,
+		json: true,
+	},
 	e2e: {
 		async setupNodeEvents(on, config) {
 			const bundler = createBundler({
