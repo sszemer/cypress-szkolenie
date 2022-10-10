@@ -3,11 +3,9 @@ const selectors = {
 	searchTextBox: '#searchTerm',
 };
 
-class MainPage {
+export class MainPage {
 	verifyIfBasicElementsAreDisplayed() {
 		cy.get(selectors.accountSummaryTab).should('be.visible');
 		cy.get(selectors.searchTextBox).should('be.visible');
 	}
 }
-
-export default MainPage;

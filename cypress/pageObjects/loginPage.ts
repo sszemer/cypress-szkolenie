@@ -4,17 +4,15 @@ const selectors = {
 	signInInput: '[name="submit"]',
 };
 
-class LoginPage {
+export class LoginPage {
 	verifyIfBasicElementsAreDisplayed() {
 		cy.get(selectors.usernameInput).should('be.visible');
 		cy.get(selectors.passwordInput).should('be.visible');
 		cy.get(selectors.signInInput).should('be.visible');
 	}
-	loginAs(username:string, password:string) {
+	loginAs(username: string, password: string) {
 		cy.get(selectors.usernameInput).type(username);
 		cy.get(selectors.passwordInput).type(password);
 		cy.get(selectors.signInInput).click();
 	}
 }
-
-export default LoginPage;

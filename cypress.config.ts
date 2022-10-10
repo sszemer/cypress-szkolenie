@@ -6,6 +6,10 @@ const createEsbuildPlugin =
 	require('@badeball/cypress-cucumber-preprocessor/esbuild').createEsbuildPlugin;
 
 export default defineConfig({
+	retries: {
+		runMode: 1,
+		openMode: 0,
+	},
 	video: false,
 	videoCompression: 33,
 	defaultCommandTimeout: 5000,

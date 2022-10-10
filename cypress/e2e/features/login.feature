@@ -1,5 +1,5 @@
 Feature: Bank tests
-@focus 
+@bank 
     Scenario: Login tests
         Given I open login page
         When I submit login with "username" and "password"
