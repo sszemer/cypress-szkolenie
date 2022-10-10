@@ -9,4 +9,4 @@ RUN npx cypress install
 RUN npx cypress run
 RUN npx mochawesome-merge "./cypress/results/*.json">mochawesome.json
 RUN npx marge mochawesome.json --inline
-RUN mv mochawesome.html index.html
+RUN mv mochawesome-report/mochawesome.html mochawesome-report/index.html
