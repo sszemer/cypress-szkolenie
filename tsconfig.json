@@ -4,7 +4,8 @@
 		"baseUrl": "../node_modules",
 		"target": "ES6",
 		"lib": ["es7", "dom"],
-		"types": ["cypress", "node"]
+		"types": ["cypress", "node"],
+		"moduleResolution": "node"
 	},
 	"include": ["**/*.ts"],
 	"exclude": ["node_modules"]
