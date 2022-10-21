@@ -3,7 +3,7 @@
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@typescript-eslint/eslint-plugin": "^5.39.0",
     "@typescript-eslint/parser": "^5.39.0",
-    "cypress": "^10.9.0",
+    "cypress": "^10.10.0",
     "esbuild": "^0.15.9",
     "eslint": "^8.24.0",
     "mochawesome": "^7.1.3",
