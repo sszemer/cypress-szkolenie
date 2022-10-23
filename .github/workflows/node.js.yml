@@ -17,7 +17,7 @@ jobs:
       matrix:
         node-version: [16.x]
     env:
-      DEBUG: cypress:electron,cypress-configuration,cypress-cucumber-preprocessor
+      DEBUG: cypress:electron,cypress-configuration,cypress-cucumber-preprocessor,cypress:* cypress run
     steps:
     - uses: actions/checkout@v3
     - name: Use Node.js ${{ matrix.node-version }}
